@@ -9,7 +9,7 @@ public class Q17 {
      * @param nums: A set of numbers
      * @return: A list of lists
      */
-    public List<List<Integer>> subsets2(int[] nums) {
+    public List<List<Integer>> subsets(int[] nums) {
         // write your code here
         Arrays.sort(nums);
         List<List<Integer>> ans = new ArrayList<>();
@@ -28,7 +28,7 @@ public class Q17 {
     }
 
 
-    public List<List<Integer>> subsets(int[] nums) {
+    public List<List<Integer>> subsets2(int[] nums) {
         // write your code here
         Arrays.sort(nums);
         List<List<Integer>> ans = new ArrayList<>();
@@ -53,6 +53,7 @@ public class Q17 {
 
     private void process2(int[] nums, int index, List<Integer> path, List<List<Integer>> ans){
         ans.add(new ArrayList(path));
+
         for(int i = index; i < nums.length; i++){
             path.add(nums[i]);
             process2(nums, i + 1, path, ans);

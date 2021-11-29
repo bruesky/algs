@@ -28,7 +28,7 @@ public class Q18 {
         return new ArrayList<>(ans);
     }
 
-    public List<List<Integer>> subsetsWithDup3(int[] nums) {
+    public List<List<Integer>> subsetsWithDup2(int[] nums) {
         // write your code here
         Arrays.sort(nums);
         Set<List<Integer>> ans = new HashSet<>();
@@ -54,7 +54,7 @@ public class Q18 {
         path.remove(path.size() - 1);
     }
 
-    public List<List<Integer>> subsetsWithDup2(int[] nums) {
+    public List<List<Integer>> subsetsWithDup3(int[] nums) {
         // write your code here
         Arrays.sort(nums);
         List<List<Integer>> ans = new ArrayList<>();
